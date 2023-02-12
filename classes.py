@@ -1,4 +1,4 @@
-class person:
+class Person:
     def set_details(self, name, age):
         # print("I am a person", self)
         self.name = name
@@ -13,9 +13,12 @@ class person:
         else:
             print("How do yo do?")
         self.display()
+    
+    def get_old(self):
+        self.age = 75
 
-p1 = person()
-p2 = person()
+p1 = Person()
+p2 = Person()
 
 p1.set_details("Bob", 28)
 p2.set_details("marlet",90)
@@ -25,3 +28,4 @@ p1.greet()
 
 # p2.display()
 p2.greet()
+p1.get_old()
