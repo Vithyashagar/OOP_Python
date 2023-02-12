@@ -7,10 +7,12 @@ class Bank:
         print("name : " + self.name +"\nbalance : "+ str(self.balance))
 
     def withdraw(self, amount):
-        self.balance = self.balance - amount 
+        # self.balance = self.balance - amount
+        self.balance -= amount 
 
     def deposit(self, amount):
-        self.balance = self.balance + amount
+        # self.balance = self.balance + amount
+        self.balance += amount
 
 
 b1 = Bank()
